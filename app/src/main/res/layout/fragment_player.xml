@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PlayerFragment">
+
+    <TextView
+        android:id="@+id/txt_playerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="2dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_authority_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:minWidth="56dp"
+            android:text="-"/>
+
+        <ImageView
+            android:id="@+id/image_authority"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_authority_down"
+            android:layout_toLeftOf="@+id/btn_authority_up"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/authority"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/btn_authority_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:minWidth="56dp"
+            android:text="+"/>
+
+        <TextView
+            android:id="@+id/text_authority"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignTop="@+id/image_authority"
+            android:layout_alignBottom="@+id/image_authority"
+            android:layout_alignLeft="@+id/image_authority"
+            android:layout_alignRight="@+id/image_authority"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:text="50"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btn_trade_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:minWidth="56dp"
+                android:text="+"/>
+
+            <ImageView
+                android:id="@+id/image_trade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_trade_up"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/trade"
+                android:clickable="true"/>
+
+            <Button
+                android:id="@+id/btn_trade_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/image_trade"
+                android:minWidth="56dp"
+                android:text="-"/>
+
+            <TextView
+                android:id="@+id/text_trade"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignTop="@+id/image_trade"
+                android:layout_alignBottom="@+id/image_trade"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:includeFontPadding="false"
+                android:text="0" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btn_combat_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:minWidth="56dp"
+                android:text="+"/>
+
+            <ImageView
+                android:id="@+id/image_combat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_combat_up"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/combat"
+                android:clickable="true"/>
+
+            <Button
+                android:id="@+id/btn_combat_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/image_combat"
+                android:minWidth="56dp"
+                android:text="-"/>
+
+            <TextView
+                android:id="@+id/text_combat"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignTop="@id/image_combat"
+                android:layout_alignBottom="@id/image_combat"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:includeFontPadding="false"
+                android:text="0"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"/>
+
+</LinearLayout>
