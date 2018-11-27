@@ -2,9 +2,9 @@ package penguin_tech.com.starrealmtrackertablet;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.support.v4.app.DialogFragment;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.app.DialogFragment;
 
 public class MessageDialogFragment extends DialogFragment {
 

@@ -1,20 +1,20 @@
 package penguin_tech.com.starrealmtrackertablet;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
-import android.support.v4.app.DialogFragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.app.DialogFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import penguin_tech.com.starrealmtrackertablet.calc.*;
+import penguin_tech.com.starrealmtrackertablet.calc.Calculator;
+import penguin_tech.com.starrealmtrackertablet.calc.CalculatorException;
 
 public class EditValueDialogFragment extends DialogFragment implements View.OnClickListener {
 
