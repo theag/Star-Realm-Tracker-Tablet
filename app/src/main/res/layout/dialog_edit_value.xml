@@ -26,28 +26,34 @@
 
     <EditText
         android:id="@+id/edit_expression"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/layout_title_bar"
+        android:layout_toLeftOf="@+id/text_result"
+        android:layout_alignParentLeft="true"
+        android:ems="3"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginRight="5dp"
         android:inputType="none"/>
 
     <TextView
         android:id="@+id/text_result"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/edit_expression"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:layout_below="@+id/edit_expression"
+        android:layout_below="@+id/layout_title_bar"
         android:gravity="right"
+        android:ems="3"
         android:textAlignment="gravity"/>
 
     <TableLayout
         android:id="@+id/layout_buttons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_result"
+        android:layout_below="@+id/edit_expression"
         android:layout_centerHorizontal="true">
         <TableRow>
             <Button
@@ -59,30 +65,6 @@
             <Button
                 android:id="@+id/btn_9"
                 android:text="9"/>
-        </TableRow>
-        <TableRow>
-            <Button
-                android:id="@+id/btn_4"
-                android:text="4"/>
-            <Button
-                android:id="@+id/btn_5"
-                android:text="5"/>
-            <Button
-                android:id="@+id/btn_6"
-                android:text="6"/>
-        </TableRow>
-        <TableRow>
-            <Button
-                android:id="@+id/btn_1"
-                android:text="1"/>
-            <Button
-                android:id="@+id/btn_2"
-                android:text="2"/>
-            <Button
-                android:id="@+id/btn_3"
-                android:text="3"/>
-        </TableRow>
-        <TableRow>
             <LinearLayout android:orientation="horizontal">
                 <Button
                     android:id="@+id/btn_plus"
@@ -99,12 +81,34 @@
                     android:minWidth="0dp"
                     android:text="-"/>
             </LinearLayout>
+        </TableRow>
+        <TableRow>
             <Button
-                android:id="@+id/btn_0"
-                android:text="0"/>
+                android:id="@+id/btn_4"
+                android:text="4"/>
+            <Button
+                android:id="@+id/btn_5"
+                android:text="5"/>
+            <Button
+                android:id="@+id/btn_6"
+                android:text="6"/>
             <Button
                 android:id="@+id/btn_backspace"
                 android:text="DEL"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/btn_1"
+                android:text="1"/>
+            <Button
+                android:id="@+id/btn_2"
+                android:text="2"/>
+            <Button
+                android:id="@+id/btn_3"
+                android:text="3"/>
+            <Button
+                android:id="@+id/btn_0"
+                android:text="0"/>
         </TableRow>
     </TableLayout>
 
